@@ -1,6 +1,6 @@
 import express from "express";
-import { readAll as readAllPosts } from "dbmod/posts";
-import { readAll as readAllCompanies } from "dbmod/companies";
+import { readAll as readAllPosts } from "dbmod/posts/index.js";
+import { readAll as readAllCompanies } from "dbmod/companies/index.js";
 
 const app = express();
 app.use(express.json());
